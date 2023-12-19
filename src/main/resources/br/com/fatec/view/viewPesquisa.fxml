@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.Controller.ViewPesquisaController">
+   <children>
+      <TableView fx:id="tblProduto" layoutX="11.0" layoutY="56.0" prefHeight="306.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="colIDProduto" editable="false" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNome" editable="false" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="colPreco" editable="false" prefWidth="69.0" text="preço" />
+            <TableColumn fx:id="colReceita" editable="false" prefWidth="88.0" text="receita" />
+            <TableColumn fx:id="colDescricao" editable="false" prefWidth="168.0" text="Descrição" />
+            <TableColumn fx:id="colFornecedorId" editable="false" prefWidth="101.0" text="fornecedor ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

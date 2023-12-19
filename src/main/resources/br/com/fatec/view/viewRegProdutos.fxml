@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.ViewRegProdutosController">
+   <children>
+      <ComboBox fx:id="cbFornecedor" layoutX="140.0" layoutY="272.0" prefHeight="25.0" prefWidth="278.0" />
+      <Label layoutX="43.0" layoutY="328.0" prefHeight="17.0" prefWidth="67.0" text="Descrição:" />
+      <GridPane layoutX="43.0" layoutY="75.0" prefHeight="166.0" prefWidth="378.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID Produto" />
+            <TextField fx:id="txtIdProduto" maxWidth="-Infinity" prefHeight="25.0" prefWidth="52.0" GridPane.columnIndex="1" />
+            <Label text="Nome" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Preço" GridPane.rowIndex="2" />
+            <TextField fx:id="txtPreco" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Receita Médica" GridPane.rowIndex="3" />
+            <CheckBox fx:id="checkReceitaMedica" mnemonicParsing="false" prefHeight="17.0" prefWidth="11.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="43.0" layoutY="276.0" text="Fornecedor" />
+      <HBox layoutX="228.0" layoutY="435.0" prefHeight="25.0" prefWidth="366.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnAtualizar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAtualizar_Click" prefHeight="25.0" prefWidth="70.0" text="Atualizar" />
+            <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluir_Click" prefHeight="25.0" prefWidth="56.0" text="Incluir" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" text="Excluir" />
+            <Button fx:id="btnExibir" layoutX="81.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnExibir_Click" text="Exibir" />
+            <Button fx:id="btnExcluir" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="25.0" prefWidth="56.0" text="Excluir" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" text="Registro de Produtos" textFill="#ff054b">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescricao" layoutX="43.0" layoutY="345.0" prefHeight="74.0" prefWidth="544.0" />
+   </children>
+</AnchorPane>

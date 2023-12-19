@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.ViewRegProdutosColController">
+   <children>
+      <Label layoutX="74.0" layoutY="14.0" text="Registro de Produtos" textFill="#ff054b">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="44.0" layoutY="100.0" prefHeight="166.0" prefWidth="378.0">
+         <children>
+            <Label fx:id="lblIdProduto" text="ID Produto" />
+            <TextField fx:id="txtIdProduto" maxWidth="-Infinity" prefHeight="25.0" prefWidth="52.0" GridPane.columnIndex="1" />
+            <Label fx:id="lblNome" text="Nome" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lblPreco" text="Preço" GridPane.rowIndex="2" />
+            <TextField fx:id="txtPreco" maxWidth="-Infinity" prefHeight="25.0" prefWidth="88.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblReceita" text="Receita Médica" GridPane.rowIndex="3" />
+            <CheckBox fx:id="checkReceitaMedica" mnemonicParsing="false" prefHeight="17.0" prefWidth="11.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lblFornecedor" text="Fornecedor" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cbFornecedor" prefHeight="25.0" prefWidth="282.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <TextArea fx:id="txtDescricao" layoutX="44.0" layoutY="289.0" prefHeight="114.0" prefWidth="544.0" />
+      <Label layoutX="44.0" layoutY="272.0" prefHeight="17.0" prefWidth="67.0" text="Descrição:" />
+      <HBox layoutX="193.0" layoutY="432.0" prefHeight="25.0" prefWidth="394.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnLimpar" disable="true" mnemonicParsing="false" onAction="#btnLimpar_Click" prefHeight="25.0" prefWidth="59.0" text="Limpar" />
+            <Button fx:id="btnAtualizar" disable="true" layoutX="232.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAtualizar_Click" prefHeight="25.0" prefWidth="73.0" text="Atualizar" />
+            <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluir_Click" prefHeight="25.0" prefWidth="59.0" text="Incluir" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="25.0" prefWidth="59.0" text="Excluir" />
+            <Button fx:id="btnExibir" mnemonicParsing="false" onAction="#btnExibir_Click" prefHeight="25.0" prefWidth="59.0" text="Exibir" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
